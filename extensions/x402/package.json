@@ -1,6 +1,6 @@
 {
   "name": "@zauthx402/openclaw-x402",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "x402 payment protocol integration for OpenClaw agents",
   "type": "module",
   "main": "index.ts",
@@ -18,8 +18,10 @@
     "bs58": "^6.0.0",
     "viem": "^2.0.0"
   },
+  "peerDependencies": {
+    "openclaw": "*"
+  },
   "devDependencies": {
-    "openclaw": "workspace:*",
     "vitest": "^1.0.0"
   },
   "scripts": {
