@@ -1,6 +1,6 @@
 {
-  "name": "@openclaw/x402",
-  "version": "0.1.0",
+  "name": "@zauthx402/openclaw-x402",
+  "version": "0.1.4",
   "description": "x402 payment protocol integration for OpenClaw agents",
   "type": "module",
   "main": "index.ts",
