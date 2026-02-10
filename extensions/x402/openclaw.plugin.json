@@ -1,5 +1,5 @@
 {
-  "id": "x402",
+  "id": "openclaw-x402",
   "name": "x402 Payment Protocol",
   "description": "Enable agents to make payments via x402 on Base (EVM) and Solana (SVM). Directory powered by zauth.",
   "configSchema": {
