@@ -1,0 +1,46 @@
+{
+  "id": "x402",
+  "name": "x402 Payment Protocol",
+  "description": "Enable agents to make payments via x402 on Base (EVM) and Solana (SVM). Directory powered by zauth.",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "evmPrivateKey": {
+        "type": "string",
+        "description": "EVM wallet private key (hex, with or without 0x prefix)"
+      },
+      "svmPrivateKey": {
+        "type": "string",
+        "description": "Solana wallet private key (base58 encoded)"
+      },
+      "defaultNetwork": {
+        "type": "string",
+        "enum": ["base", "base-sepolia", "solana", "solana-devnet"],
+        "default": "base"
+      },
+      "maxPaymentUSDC": {
+        "type": "string",
+        "default": "0.05",
+        "description": "Max payment per request in USDC (e.g., '0.10')"
+      },
+      "rpcUrl": {
+        "type": "string",
+        "description": "Optional custom RPC URL"
+      },
+      "disableTelemetry": {
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "uiHints": {
+    "evmPrivateKey": {
+      "label": "EVM Private Key",
+      "inputType": "password"
+    },
+    "svmPrivateKey": {
+      "label": "Solana Private Key",
+      "inputType": "password"
+    }
+  }
+}
